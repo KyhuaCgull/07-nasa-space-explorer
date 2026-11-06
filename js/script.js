@@ -23,7 +23,7 @@ if (getImagesBtn) {
 
     try {
       // Fetch data from NASA APOD API using DEMO_KEY
-      const apiUrl = `https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&start_date=${startDate}&end_date=${endDate}`;
+      const apiUrl = `https://api.nasa.gov/planetary/apod?api_key=RrcBFm8NmHkgfMdG8KkbBfBzcbFRbTtKWWNFMKKB&start_date=${startDate}&end_date=${endDate}`;
       console.log(`🌐 Fetching from URL: ${apiUrl}`);
 
       const response = await fetch(apiUrl);
