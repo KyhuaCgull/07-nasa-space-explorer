@@ -1,12 +1,14 @@
+console.log("script.js is loaded!");
 // Select DOM elements based on standard starter file structure
 const getImagesBtn = document.getElementById('get-images-btn'); // Adjust ID if your button differs
-const startDateInput = document.getElementById('start-date');
-const endDateInput = document.getElementById('end-date');
-const galleryContainer = document.getElementById('gallery-container'); // Placeholder container
+const startDateInput = document.getElementById('startDate');
+const endDateInput = document.getElementById('endDate');
+const galleryContainer = document.querySelector('.gallery');
 const loadingElement = document.getElementById('loading-message'); // Loading message element
 const modal = document.getElementById('modal');
 const modalBody = document.getElementById('modal-body');
 const closeModalBtn = document.getElementById('close-modal');
+const getImagesBtn = document.getElementById('getImagesBtn');
 
 // --- LEVELUP: Random Space Facts Array ---
 const spaceFacts = [
