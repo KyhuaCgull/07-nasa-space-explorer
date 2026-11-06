@@ -142,3 +142,90 @@ button:hover {
   font-size: 48px;
   margin-bottom: 20px;
 }
+/* --- EXTRA CLASSES FOR MODAL, LEVELUPS & LOADING --- */
+
+/* Random Space Fact Banner (LevelUp) */
+#space-fact-container {
+  background: #e2e8f0;
+  border-left: 4px solid #0b3d91;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  color: #212121;
+}
+
+/* Hover Zoom Effect (LevelUp) */
+.gallery-item {
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+/* Video / Iframes inside gallery */
+.gallery-item iframe {
+  width: 100%;
+  height: 200px;
+  border: none;
+  border-radius: 4px;
+}
+
+/* Modal Window Styles */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.modal-content {
+  background: white;
+  color: #212121;
+  padding: 25px;
+  border-radius: 8px;
+  max-width: 650px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.modal-image, .modal-video {
+  width: 100%;
+  max-height: 350px;
+  object-fit: contain;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+#close-modal {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 28px;
+  cursor: pointer;
+  color: #333;
+}
+
+#close-modal:hover {
+  color: #fc3d21;
+}
+
+/* Loading Message */
+#loading-message {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #555;
+  margin: 20px 0;
+}
