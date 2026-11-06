@@ -27,17 +27,17 @@ if (getImagesBtn) {
       console.log(`🌐 Fetching from URL: ${apiUrl}`);
 
       const response = await fetch(apiUrl);
-      console.log(`📡 Response status: ${response.status}`);
+console.log(`📡 Response status: ${response.status}`);
 
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
+if (!response.ok) {
+  throw new Error(`HTTP error! status: ${response.status}`);
+}
 
-      const data = await response.json();
-      console.log("📦 Data received from NASA:", data);
+const data = await response.json();
+console.log("📦 Data received from NASA:", data);
 
-      // Render Gallery
-      renderGallery(data);
+// Call renderGallery to display the photos
+renderGallery(data);
 
     } catch (error) {
       console.error('❌ Error fetching APOD data:', error);
