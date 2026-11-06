@@ -1,6 +1,6 @@
 console.log("script.js is loaded!");
 // Select DOM elements based on standard starter file structure
-const getImagesBtn = document.getElementById('get-images-btn'); // Adjust ID if your button differs
+const getImagesBtn = document.getElementById('getImagesBtn');
 const startDateInput = document.getElementById('startDate');
 const endDateInput = document.getElementById('endDate');
 const galleryContainer = document.querySelector('.gallery');
